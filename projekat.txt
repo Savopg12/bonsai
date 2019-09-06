@@ -1,0 +1,17 @@
+# funkcionalnost dugme
+
++ dodaj dugme
++ kreiraj eventlistener za dugme
++ napraviti novu funkciju za klik na dugme(ista kao za novih 6 samo  i<3;)
++ pozovi tu funkciju
+
+#modal window
+
++ dodati eventlistener na linkove
++ prikazati modal window prazan
+- pozvati fatch na odgovarajuci slider
+- prikazati modal window (pun prikaz)
++ promijeni txt na slider Budva
++ git
+- modal
+- push again
