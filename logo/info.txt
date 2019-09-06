@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Aganè 45 (light)
+font link: https://www.graphicpear.com/agane-free-font/
+font author: Danilo De Marco
+font author site: http://www.danilodemarco.com/
+Slogan Font: KaushanScript-Regular.ttf
+
+icon designer: Anuar Zhumaev
+icon designer link: /yxorama
+        
+{"bg":"#F6E8D0","icon":"#B5988F","font":"#B5988F","slogan":"#c9aca3"}
+      

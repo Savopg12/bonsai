@@ -1,0 +1,60 @@
+html {
+  min-height: 100vh;
+}
+body {
+    box-sizing: border-box;
+    background: url("./backgorund.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#navbarNavDropdown  {
+    justify-content: flex-end;
+}
+.main {
+    display: flex;
+    padding: 30px;
+    background: rgba(223, 155, 107, 0.794);
+
+
+}
+.content {
+    flex:80%;
+}
+.slider{
+    margin: 50px;
+}
+.sidebar {
+    flex: 20%;
+    display: flex;
+    margin-left: 40px;
+}
+.top-reated {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.card {
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+}
+.col-md-4 {
+    width: 200px;
+    height: 200px;
+}
+.footer .nav {
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.carousel-item-inner {
+  display: flex;
+}
+.footer {
+  margin-top: auto;
+}
