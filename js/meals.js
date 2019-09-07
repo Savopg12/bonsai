@@ -55,7 +55,7 @@ function createMealFull (mealDate) {
   var youTubeJson = mealDate.meals[0].strYoutube
   if (!(youTubeJson === '' || youTubeJson === null)) {
     var youTubeLink = 'https://www.youtube.com/embed/' + youTubeJson.split('=')[1]
-    output += '<div class="embed-responsive">' +
+    output += '<div class="embed-responsive embed-responsive-16by9">' +
     '<iframe class="embed-responsive-item" src="' + youTubeLink + '" allowfullscreen></iframe>' +
    '</div>'
   }
