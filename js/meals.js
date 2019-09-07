@@ -79,11 +79,11 @@ function createMiniCard (mealDate) {
 }
 
 function bgCardSlider (mealDate) {
-  return '<a href="">' +
+  return '<a data-id-meal="' + mealDate.meals[0].idMeal + '" href="#" class="open-modal">' +
     '<div class="card">' +
     '<img src="' + mealDate.meals[0].strMealThumb + '" class="card-img-top" alt="">' +
     '<div class="card-button">' +
-    '<a data-id-meal="' + mealDate.meals[0].idMeal + '" href="#" type="button" class="btn open-modal btn-warning">Read more</a>' +
+    '<button type="button" class="btn btn-warning">Read more</button>' +
     '</div>' +
     '</div>' +
     '</a>'

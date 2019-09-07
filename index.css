@@ -23,7 +23,8 @@ body {
     flex:80%;
 }
 .slider{
-    margin: 50px;
+    margin-bottom: 50px;
+
 }
 .sidebar {
     flex: 20%;
@@ -41,10 +42,11 @@ body {
     background: transparent;
     border: none;
 }
-.col-md-4 {
-    width: 200px;
-    height: 200px;
+
+.card-button {
+  text-align: center;
 }
+
 .footer .nav {
     justify-content: center;
 }
@@ -52,9 +54,18 @@ a {
     text-decoration: none;
     color: black;
 }
+
 .carousel-item-inner {
   display: flex;
+  margin-left: -20px;
+  margin-right: -20px;
 }
+
+.carousel-item-inner a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .footer {
   margin-top: auto;
 }
