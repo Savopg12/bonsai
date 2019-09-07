@@ -52,9 +52,13 @@ function createMealFull (mealDate) {
     }
   }
 
-  output += '<div class="embed-responsive">' +
-  '<iframe class="embed-responsive-item" src="' + mealDate.meals[0].strYoutube + '" allowfullscreen></iframe>' +
- '</div>'
+  var youTubeJson = mealDate.meals[0].strYoutube
+  if (!(youTubeJson === '' || youTubeJson === null)) {
+    var youTubeLink = 'https://www.youtube.com/embed/' + youTubeJson.split('=')[1]
+    output += '<div class="embed-responsive">' +
+    '<iframe class="embed-responsive-item" src="' + youTubeLink + '" allowfullscreen></iframe>' +
+   '</div>'
+  }
 
   output += '</div>' +
       '</div>' +
