@@ -58,3 +58,12 @@ a {
 .footer {
   margin-top: auto;
 }
+
+
+
+.modal-dialog {
+  max-width: 50%;
+}
+.modal-content{
+  max-height: 100%;
+}

@@ -9,9 +9,13 @@
 
 + dodati eventlistener na linkove
 + prikazati modal window prazan
-- pozvati fatch na odgovarajuci slider
++ pozvati fatch na odgovarajuci slider()
 - prikazati modal window (pun prikaz)
 + promijeni txt na slider Budva
 + git
 - modal
 - push again
+- you tube(ifrime)
+- recepet
+- sirina modal
+- push
