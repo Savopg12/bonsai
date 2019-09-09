@@ -13,9 +13,23 @@
 - prikazati modal window (pun prikaz)
 + promijeni txt na slider Budva
 + git
-- modal
-- push again
-- you tube(ifrime)
-- recepet
-- sirina modal
-- push
++ modal
++ push again
++ prosiri modal with zbog recepta
++ dodaj recept ispod sastava
++ you tube(ifrime)push
++ recepet-push
++ sirina modal- push
++ izbaci side bar dodaj slider
+
+*Iduca nedelja
+
+-napravi list stranu
+- ministarstvo
+- sastanak sa Nenom (uto,cet,pet)
+- Savo, nekretnine
+  - Generalno obuka, support i komunikacija
+  - Visejezicnost, prevodjenje na EN i RU ko ce da radi, obuka
+  - Webforms - emails and message checks and translation.
+  - Users, permissions and roles setup
+  - Instalirati GA i podesiti

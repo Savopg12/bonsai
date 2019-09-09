@@ -15,17 +15,24 @@ function fetchRandomMeal () {
     })
 }
 
-function createMealCard (mealDate) {
-  return '<div class="card mb-3 col-sm-4">' +
+function fetchSearchMeal (search) {
+  return fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=' + search)
+    .then(function (response) {
+      return response.json()
+    })
+}
+
+function createMealCard (mealDate, gridCol) {
+  return '<div class="card mb-3 col-sm-' + gridCol + '">' +
     '<div class="row no-gutters">' +
     '<div class="col-md-4">' +
-    '<img src="' + mealDate.meals[0].strMealThumb + '" class="card-img" alt="...">' +
+    '<img src="' + mealDate.strMealThumb + '" class="card-img" alt="...">' +
     '</div>' +
     '<div class="col-md-8">' +
     '<div class="card-body">' +
-    '<h5 class="card-title">Title:' + mealDate.meals[0].strMeal + '</h5>' +
-    '<h5>Category:' + mealDate.meals[0].strCategory + '</h5>' +
-    '<h5>Tags:' + mealDate.meals[0].strTags + '</h5>' +
+    '<h5 class="card-title">Title:' + mealDate.strMeal + '</h5>' +
+    '<h5>Category:' + mealDate.strCategory + '</h5>' +
+    '<h5>Tags:' + mealDate.strTags + '</h5>' +
     '</div>' +
     '</div>' +
     '</div>' +
@@ -70,9 +77,9 @@ function createMealFull (mealDate) {
 function createMiniCard (mealDate) {
   return '<a href="">' +
     '<div class="card" style="width: 18rem;">' +
-    '<img src="' + mealDate.meals[0].strMealThumb + '" class="card-img-top" alt="">' +
+    '<img src="' + mealDate.strMealThumb + '" class="card-img-top" alt="">' +
     '<div class="card-body">' +
-    '<h3 class="card-text">' + mealDate.meals[0].strMeal + '</h3>' +
+    '<h3 class="card-text">' + mealDate.strMeal + '</h3>' +
     '</div>' +
     '</div>' +
     '</a>'
@@ -143,32 +150,4 @@ function initModalLinks () {
   for (var i = 0; i < openModal.length; ++i) {
     openModal[i].addEventListener('click', modalWindow)
   }
-}
-
-window.onload = function () {
-  //
-  var topRated = document.querySelector('.top-rated')
-  for (var i = 0; i < 6; ++i) {
-    fetchRandomMeal().then(function (data) {
-      topRated.innerHTML = topRated.innerHTML + createMealCard(data)
-      initModalLinks()
-    })
-  }
-
-  //
-  var bestTeaser = document.querySelector('.teaser_best')
-  for (var i = 0; i < 2; ++i) {
-    fetchRandomMeal().then(function (data) {
-      bestTeaser.innerHTML = bestTeaser.innerHTML + createMiniCard(data)
-      initModalLinks()
-    })
-  }
-
-  var slider = document.querySelector('.carousel-inner')
-  for (var i = 0; i < 3; ++i) {
-    createSlider(slider, i == 0 ? true : false)
-  }
-
-  var moreBtn = document.querySelector('.load-more-top-rated')
-  moreBtn.addEventListener('click', loadMore)
 }

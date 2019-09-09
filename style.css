@@ -13,11 +13,11 @@ body {
     justify-content: flex-end;
 }
 .main {
+  padding: 30px;
+  background: rgba(223, 155, 107, 0.794);
+}
+.main--sidebar {
     display: flex;
-    padding: 30px;
-    background: rgba(223, 155, 107, 0.794);
-
-
 }
 .content {
     flex:80%;
@@ -70,11 +70,15 @@ a {
   margin-top: auto;
 }
 
-
-
 .modal-dialog {
   max-width: 50%;
 }
 .modal-content{
   max-height: 100%;
+}
+
+/* List page */
+
+.fld-search {
+  width: 91%;
 }
