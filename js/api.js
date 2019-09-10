@@ -127,7 +127,7 @@ function loadMore () {
   var topRated = document.querySelector('.top-rated')
   for (var i = 0; i < 3; ++i) {
     fetchRandomMeal().then(function (data) {
-      topRated.innerHTML = topRated.innerHTML + createMealCard(data)
+      topRated.innerHTML = topRated.innerHTML + createMealCard(data.meals[0], 4)
       initModalLinks()
     })
   }
