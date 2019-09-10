@@ -3,7 +3,7 @@ html {
 }
 body {
     box-sizing: border-box;
-    background: url("./backgorund.jpg") no-repeat;
+    background: url("./img/backgorund.jpg") no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;

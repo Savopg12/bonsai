@@ -22,6 +22,28 @@ function fetchSearchMeal (search) {
     })
 }
 
+function fetchCategoryMeal () {
+  return fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
+    .then(function (response) {
+      return response.json()
+    })
+}
+
+function fetchAreaMeal () {
+  return fetch('https://www.themealdb.com/api/json/v1/1/list.php?a=list')
+    .then(function (response) {
+      return response.json()
+    })
+}
+
+function fetchIngredients() {
+  return fetch('https://www.themealdb.com/api/json/v1/1/list.php?i=list')
+    .then(function (response) {
+      return response.json()
+    })
+}
+
+
 function createMealCard (mealDate, gridCol) {
   return '<div class="card mb-3 col-sm-' + gridCol + '">' +
     '<div class="row no-gutters">' +
