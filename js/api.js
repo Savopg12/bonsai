@@ -43,9 +43,30 @@ function fetchIngredients() {
     })
 }
 
+function fetchFilterCategory (category) {
+  return fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=' + category)
+    .then(function (response) {
+      return response.json()
+    })
+}
+
+function fetchFilterArea (area) {
+  return fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=' + area)
+    .then(function (response) {
+      return response.json()
+    })
+}
+
+function fetchFilterIngredient (ing) {
+  return fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=' + ing)
+    .then(function (response) {
+      return response.json()
+    })
+}
 
 function createMealCard (mealDate, gridCol) {
   return '<div class="card mb-3 col-sm-' + gridCol + '">' +
+    '<a data-id-meal="' + mealDate.idMeal + '" href="#" class="open-modal">' + 
     '<div class="row no-gutters">' +
     '<div class="col-md-4">' +
     '<img src="' + mealDate.strMealThumb + '" class="card-img" alt="...">' +
@@ -58,7 +79,9 @@ function createMealCard (mealDate, gridCol) {
     '</div>' +
     '</div>' +
     '</div>' +
-    '</div>'
+    '</a>' +
+    '</div>' 
+    
 }
 
 function createMealFull (mealDate) {
@@ -97,7 +120,7 @@ function createMealFull (mealDate) {
 }
 
 function createMiniCard (mealDate) {
-  return '<a href="">' +
+  return '<a data-id-meal="' + mealDate.idMeal + '" href="#" class="open-modal">' +
     '<div class="card" style="width: 18rem;">' +
     '<img src="' + mealDate.strMealThumb + '" class="card-img-top" alt="">' +
     '<div class="card-body">' +

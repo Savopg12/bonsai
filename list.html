@@ -34,7 +34,7 @@
               <a class="nav-link" href="./list.html">List</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Custom Page</a>
+              <a class="nav-link" href="./aboutAs.html">Custom Page</a>
             </li>
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,44 +59,40 @@
 
     <form class="search-form">
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <input class="form-check-input" type="radio" name="searchFilterOptions" checked id="inlineRadio1" value="mealName">
         <label class="form-check-label" for="inlineRadio1">Name</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <input class="form-check-input" type="radio" name="searchFilterOptions" id="inlineRadio2" value="mealCategory">
         <label class="form-check-label" for="inlineRadio2">Category</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+        <input class="form-check-input" type="radio" name="searchFilterOptions" id="inlineRadio3" value="areaCategory">
         <label class="form-check-label" for="inlineRadio3">Area</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <label class="form-check-label" for="inlineRadio2">Ingredient</label>
+        <input class="form-check-input" type="radio" name="searchFilterOptions" id="inlineRadio4" value="ingredients">
+        <label class="form-check-label" for="inlineRadio4">Ingredient</label>
       </div>
 
-
-      <div class="fld-search">
+      <div class="fld-search search-filter form-group" id="mealNameWrapper">
         <label class="sr-only" for="inlineFormInput">Name</label>
-        <input type="text" class="form-control mb-2 field-search" id="inlineFormInput" placeholder="Search">
+        <input type="text" class="form-control mb-2 field-search" id="mealName" placeholder="Search">
       </div>
-
-      <div class="form-group">
+      <div class="form-group search-filter" id="mealCategoryWrapper">
         <label for="mealCategory">Category</label>
         <select class="form-control" id="mealCategory">
         </select>
       </div>
-      <div class="form-group">
+      <div class="form-group search-filter" id="areaCategoryWrapper">
         <label for="mealCategory">Area</label>
         <select class="form-control" id="areaCategory">
         </select>
       </div>
-
-      <div class="form-group" id="ingredients">
+      <div class="form-group search-filter" id="ingredientsWrapper">
       </div>
 
       <div class="col-auto">
-        <label class="sr-only" for="inlineFormInputGroup">Username</label>
         <div class="input-group mb-2">
           <div class="col-aut">
             <button type="button" class=" src-btn btn-primary mb-2">Search</button>
@@ -116,17 +112,17 @@
     <div class="container">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">
+          <a class="nav-link active" href="./index.html">
             <h3>Home</h3>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="./list.html">
             <h3>Recipes</h3>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="./aboutAs.html">
             <h3>About as</h3>
           </a>
         </li>
