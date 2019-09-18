@@ -33,3 +33,8 @@
   - Webforms - emails and message checks and translation.
   - Users, permissions and roles setup
   - Instalirati GA i podesiti
+
+*danas
+- napraviti check box i padajuce manije
+-fetcsh za area
+-
