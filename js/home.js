@@ -1,3 +1,8 @@
+window.addEventListener("load", function () {
+  const loader = document.querySelector(".loader");
+  loader.className += " hidden"; // class "loader hidden"
+});
+
 window.onload = function () {
   //
   var topRated = document.querySelector('.top-rated')
@@ -24,4 +29,7 @@ window.onload = function () {
 
   var moreBtn = document.querySelector('.load-more-top-rated')
   moreBtn.addEventListener('click', loadMore)
+  
 }
+
+

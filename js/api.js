@@ -1,5 +1,5 @@
 /**
- * Return one meal from themealdb.com in json.
+ * Vraca meal js objekte
  */
 function fetchMeal (idMeal) {
   return fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + idMeal)
